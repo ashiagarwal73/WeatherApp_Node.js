@@ -74,7 +74,7 @@ axios.get(geocodeUrl).then((response)=>{
     if(response.data.statusCode===400){
         throw new Error("Temperature not Available");
     }
-    console.log("Temperature :"+response.data.currently.temperature);
+    console.log("Temperature of "+decodeURIComponent(encodedAddress)+" is "+response.data.currently.temperature);
 }).catch((error)=>{
     if(error.code==='ENOTFOUND'){
         console.log("Unable to Connect to server");
