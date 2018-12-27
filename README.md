@@ -1,4 +1,4 @@
-# WeatherApp_Node
+# WeatherApp_Node.js
 Check temperature of any place using Node js
 
 ## Steps to run:
